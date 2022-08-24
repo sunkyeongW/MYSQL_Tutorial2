@@ -26,5 +26,26 @@
 
     SQL을 MySQL 서버에 전송함으로써 데이터베이스 서버를 제어.
 
+# SELECT
+    1. 숫자 제한(LIMIT)
+    2. 정렬(ORDER BY)
+        ASC : 오름차순
+        DESC : 내림차순
+    3. 중복 제거(DISTINCT)
 
+# WHERE
+    = 테이블에서 조건에 맞는것만 가져올 때.
+    1. 논리 연산자
+        ex) SELECT * FROM 테이블 WHERE 조건(price >= 15)
+    2. 목록 포함(IN, NOT IN)
+    3. 문자열 포함(LIKE)
+        해당 문자열만 데이터 가져오고 싶을 때 쓰임.
+    4. AND, OR
 
+# GROUP BY
+    SELECT 열 이름, 통계함수 FROM 테이블명 GROUP BY 열 이름;
+    HAVING : 그룹화한 결과에 조건을 걸 때
+
+# SUB QUERY
+    메인쿼리가 서브쿼리를 포함하는 종속적인 관계.
+    
